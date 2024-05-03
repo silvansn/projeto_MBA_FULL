@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const routes = require('./routes');
-const path = require('path'); // Importe o módulo 'path'
+const path = require('path'); 
 
 app.use(express.json());
 

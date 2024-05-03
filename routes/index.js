@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const UserController = require('../controllers/userController');
 const AuthController = require('../controllers/authController');
-const VoluntController = require('../controllers/voluntController'); // Importe o controlador correto
+const VoluntController = require('../controllers/voluntController'); 
 
 // Rotas para usuários
 router.post('/users', UserController.createUser);
@@ -16,7 +16,7 @@ router.get('/users', UserController.getAllUsers);
 router.post('/login', AuthController.login);
 
 // Rotas para voluntários
-router.post('/voluntarios', VoluntController.createVoluntario); // Use o método correto do controlador de voluntários
+router.post('/voluntarios', VoluntController.createVoluntario); 
 router.get('/voluntarios/:id', VoluntController.getVoluntarioById);
 router.put('/voluntarios/:id', VoluntController.updateVoluntario);
 router.delete('/voluntarios/:id', VoluntController.deleteVoluntario);

@@ -42,6 +42,6 @@ module.exports = {
     },
 
     async getAllVoluntarios() {
-        return await prisma.voluntario.findMany(); // Corrigido para findMany()
+        return await prisma.voluntario.findMany();
     },
 };
